@@ -63,6 +63,12 @@ pub struct BarebonesWatchFace {
     pub bluetooth_label: lvgl::Ptr,
     /// Label for Power Indicator (Charging & Battery)
     pub power_label:     lvgl::Ptr,
+    //  Attempt to change the background color
+    pub fn fill_bg(
+        canvas: *mut lv_obj_t, 
+        color: lv_color_t, 
+        opa: lv_opa_t
+    )
 }
 
 impl WatchFace for BarebonesWatchFace {
